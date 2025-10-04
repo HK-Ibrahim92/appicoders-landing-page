@@ -1,0 +1,20 @@
+/* Reset/Normalize */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --primary: #1D4ED8; /* update with figma color */
+    --secondary: #9333EA;
+    --text-color: #333;
+    --font-main: 'Inter', sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+    background: #fff;
+  }
+  

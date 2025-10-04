@@ -1,0 +1,92 @@
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    color: white;
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+  }
+  
+  .navbar-container {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+    padding: 2rem 0rem;
+  }
+  
+  .navbar-logo img {
+    height: 50px;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #ffcc00;
+  }
+  .navbar-right {
+    display: flex;
+    flex-direction: column; /* stack links on top, contact below */
+    align-items: flex-end;  /* align both to the right side */
+  }
+  .contact-btn{
+    margin-top: 5px;
+    border: 3px solid white;
+    background: transparent;
+    opacity: 0.8;
+    color: white;
+    padding: 0.2rem 1rem;
+    border-radius: 40px;
+  }
+  /* Hamburger button */
+  .navbar-toggle {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Contact row */
+  .navbar-contact {
+    background: rgba(0, 0, 0, 0.4); 
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  /* ================== Responsive ================== */
+  @media (max-width: 768px) {
+    .navbar-links {
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background: rgba(0, 0, 0, 0.85);
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem 2rem;
+      display: none;
+    }
+  
+    .navbar-links.open {
+      display: flex;
+    }
+  
+    .navbar-toggle {
+      display: block;
+    }
+  }
+  

@@ -1,0 +1,141 @@
+.hero-section {
+    width: 100%;
+    overflow: hidden;
+    background-color: #20222D;
+    min-height: 100vh;
+
+  }
+  .hero {
+    width: 100%;
+    min-height: 100vh; /* or adjust based on design */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background: url("../../assets/Rectangle.png") top center/100% 100% no-repeat;
+    position: relative;
+    color: white;
+  }
+  
+
+  
+  /* Second background image */
+  .hero::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../../assets/Rectangle1.png") Left/cover no-repeat;
+  }
+  
+  
+  .overlay {
+    margin-top: 80px; /* to avoid navbar overlap */
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hero-container {
+    position: relative; /* keeps content above overlay */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    z-index: 2;
+  }
+  
+  /* Left Image */
+  .hero-left img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+  /* Right Content */
+  .hero-right {
+    flex: 1;
+    z-index: 2;
+  }
+  
+  .hero-right h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  
+  .hero-right p {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    max-width: 600px;
+  }
+  
+  .hero-btn {
+  background: linear-gradient(45deg, #FF0000, #333);
+  color: #222;
+  width: 250px;
+  height: 50px;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+  
+  .hero-btn:hover {
+    background: #ff9900;
+  }
+  .arrow-btn {
+  position: absolute;
+  top: 98%;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.arrow-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* left button */
+.arrow-btn.left {
+  left: 82%;
+}
+
+/* right button */
+.arrow-btn.right {
+  right: 11%;
+}
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-right h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-left img {
+      max-width: 300px;
+    }
+  }
+  
