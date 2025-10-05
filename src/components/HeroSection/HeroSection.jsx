@@ -13,7 +13,7 @@ export default function HeroSection() {
       id="home"
     //   style={{ backgroundImage: `url(${bgImg})` }}
     >
-      <div className="overlay">
+      <div className="overlay-hero">
         <div className="hero-container">
           
           {/* Left: Image */}

@@ -1,0 +1,120 @@
+/* Section wrapper */
+.technologies-section {
+  position: relative;
+  padding: 70px 20px 90px;
+  background: #1f1f1f;             /* dark backdrop like screenshot */
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tech-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  margin: 0 0 35px;
+}
+
+/* Row layout */
+.tech-row {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1.3fr;
+  align-items: center;
+  /* gap: 28px; */
+  position: relative;
+}
+
+/* Left white 
+card */
+.tech-card {
+display: flex;
+align-items: center;
+  background: #fff;
+  color: #222;
+  border-radius: 10px;
+  padding: 36px 28px 28px;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
+  position: relative;
+  min-height: 400px;
+}
+
+.tech-card h3 {
+  margin: 0 0 10px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #1d1d1d;
+}
+
+.tech-card p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+  max-width: 350px;
+}
+
+/* red accent (three tiny lines) bottom-left */
+.accent {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: absolute;
+  left: 26px;
+  bottom: 18px;
+}
+
+.accent .bar {
+  width: 22px;
+  height: 3px;
+  background: #e53935;
+  border-radius: 2px;
+  opacity: 0.65;
+}
+
+.accent .bar.main {
+  width: 40px;
+  opacity: 1;
+}
+
+/* Right image card (overlaps and is taller) */
+.tech-visual {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.35);
+  transform: translateX(-50px);    
+}
+
+.tech-visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 360px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .tech-row {
+    grid-template-columns: 1fr;
+  }
+  .tech-visual {
+    transform: none;
+  }
+  .tech-visual img {
+    max-height: 320px;
+  }
+}
+
+@media (max-width: 560px) {
+  .tech-title {
+    font-size: 28px;
+  }
+  .tech-card {
+    padding: 26px 22px 48px;
+  }
+  .tech-card h3 {
+    font-size: 22px;
+  }
+}

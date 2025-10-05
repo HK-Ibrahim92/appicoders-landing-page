@@ -50,37 +50,39 @@ export default function ServicesSection() {
 
     return (
         <section className="services-section" id="services">
-                <div className="services-container">
-                    {/* Heading */}
-                    <div className="services-header">
-                        <div    >
+            <div className="services-container">
+                {/* Heading */}
+                <div className="service-content">
+                <div className="services-header">
+                    <div    >
 
                         <h2>Our Services</h2>
                         <p>Get to know about what we’re good at.</p>
-                        </div>
                     </div>
+                </div>
 
-                    {/* Services Grid */}
-                    <div className="services-grid">
-                        {services.map((service, index) => (
-                            <div key={index} className="service-card">
-                                <div className="service-box">
-                                    <div className="service-img">
-                                    <img   src={service.img} alt={service.title} />
-                                    </div>
+                {/* Services Grid */}
+                <div className="services-grid">
+                    {services.map((service, index) => (
+                        <div key={index} className="service-card">
+                            <div className="service-box">
+                                <div className="service-img">
+                                    <img src={service.img} alt={service.title} />
+                                </div>
                                 <div>
-                                <h3>{service.title}</h3>
-                                <p>{service.desc}</p>
+                                    <h3>{service.title}</h3>
+                                    <p>{service.desc}</p>
                                 </div>
-                                </div>
-
                             </div>
-                        ))}
-                    </div>
+
+                        </div>
+                    ))}
                 </div>
-                <div className="right-group-image">
-<img src={grouplaptop} alt="" />
                 </div>
+            <div className="right-group-image">
+                <img src={grouplaptop} alt="" />
+            </div>
+            </div>
         </section>
     );
 }
