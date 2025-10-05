@@ -1,6 +1,8 @@
 import AboutSection from "./components/AboutSection/AboutSection";
+import Awards from "./components/Awards/Awards";
 import CaseStudySection from "./components/CaseStudySection/CaseStudySection";
 import ClientView from "./components/ClientView/ClientView";
+import ContactSection from "./components/ContactSection/ContactSection";
 import HeroSection from "./components/HeroSection/HeroSection";
 import Industries from "./components/Industries/Industries";
 import Layout from "./components/Layout/Layout";
@@ -23,8 +25,8 @@ export default function App() {
         <Industries/>
         <Technologies/>
         <Products/>
-        <h1>Welcome to Appicoders</h1>
-        <p>This is where the landing page content goes.</p>
+        <Awards/>
+        <ContactSection/>
       </section>
     </Layout>
   );

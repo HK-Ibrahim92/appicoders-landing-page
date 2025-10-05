@@ -74,21 +74,16 @@
   }
   
   .hero-btn {
-  background: linear-gradient(45deg, #FF0000, #333);
-  color: #222;
-  width: 250px;
-  height: 50px;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s ease;
+  background-color: #E81626;
+  height: 20px;
+border: none;
+
 }
 
   
   .hero-btn:hover {
-    background: #ff9900;
+  cursor: pointer;
+
   }
   .arrow-btn {
   position: absolute;

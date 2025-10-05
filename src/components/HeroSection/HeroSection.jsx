@@ -1,5 +1,7 @@
 import "./HeroSection.css";
-import heroImg from "../../assets/Mobile-Mockup.png"; // left side image
+import heroImg from "../../assets/Mobile-Mockup.png"; 
+import getQouteBtn from "../../assets/getQoute-btn.png"; 
+
 import bgImg from "../../assets/Rectangle.png";
 import bgImg1 from "../../assets/Rectangle1.png";
 
@@ -27,7 +29,7 @@ export default function HeroSection() {
             <p>
             We build Android & iOS Mobile Apps that cater all your business needs and take it on the next level.
             </p>
-            <button className="hero-btn">GET A FREE QUOTE</button>
+            <button className="hero-btn"><img src={getQouteBtn} alt="" /></button>
           
 <div className="arrow-btn left">
   <i className="fa-solid fa-arrow-left"></i>
