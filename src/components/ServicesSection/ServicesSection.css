@@ -6,6 +6,8 @@
   width: 100%;
   background: url("../../assets/Rectangle2.png") top center / cover no-repeat;
   z-index: 1;
+  background-size: 100% 100%; /* Ensure the background image covers the entire section */
+  background-repeat: no-repeat;
 }
 
 /* Second background (bottom shape) */
@@ -19,6 +21,7 @@
   background: url("../../assets/Rectangle3.png") top center / cover no-repeat;
   z-index: 0;
   pointer-events: none;
+  background-repeat: no-repeat;
 }
 
 /* Left container */
@@ -149,4 +152,254 @@ margin-top: 10%;
     flex: 0 0 100%;
     justify-content: center;
   }
+}
+
+/* Enhanced Responsive Styles for All Screens */
+
+@media (max-width: 1200px) {
+  .services-container {
+    padding: 80px 40px;
+  }
+
+  .service-content {
+    width: 70%;
+    padding-left: 50px;
+  }
+
+  .services-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .services-header p {
+    font-size: 1rem;
+  }
+
+  .right-group-image img {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 992px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 30px;
+  }
+
+  .service-content {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .services-header h2 {
+    font-size: 2rem;
+  }
+
+  .services-header p {
+    font-size: 0.95rem;
+  }
+
+  .services-grid {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .service-card {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+
+  .right-group-image {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .right-group-image img {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-container {
+    padding: 10px 20px;
+  }
+
+  .services-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .services-header p {
+    font-size: 0.9rem;
+  }
+
+  .services-grid {
+    gap: 15px;
+  }
+
+  .service-card {
+    flex: 0 0 100%;
+    max-width: 90%;
+  }
+
+  .right-group-image img {
+    max-width: 400px;
+  }
+
+  .services-section {
+    background-size: cover; /* Adjust for smaller screens */
+  }
+
+  .services-section::after {
+    background-size: cover; /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .services-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .services-header p {
+    font-size: 0.8rem;
+  }
+
+  .service-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 15px;
+  }
+
+  .service-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .service-img img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .service-box h3 {
+    font-size: 16px;
+  }
+
+  .service-box p {
+    font-size: 14px;
+  }
+
+  .right-group-image img {
+    max-width: 300px;
+  }
+
+  .services-section {
+    background-size: cover; /* Adjust for mobile screens */
+  }
+
+  .services-section::after {
+    background-size: cover; /* Adjust for mobile screens */
+  }
+}
+
+/* Responsive adjustments for background images */
+
+@media (max-width: 1200px) {
+  .services-section {
+    background-size: cover;
+    min-height: 110vh;
+  }
+
+  .services-section::after {
+    background-size: contain;
+    height: 800px;
+  }
+}
+
+@media (max-width: 992px) {
+  .services-section {
+    background-size: cover;
+    min-height: 100vh;
+  }
+
+  .services-section::after {
+    background-size: cover;
+    height: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    background-position: center;
+    background-size: cover;
+    min-height: 120vh;
+  }
+
+  .services-section::after {
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-section {
+    background-position: center;
+    background-size: cover;
+    min-height: 135vh;
+  }
+
+  .services-section::after {
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+  }
+}
+
+/* Ensure right-group-image aligns with services-header on tablet and mobile */
+
+@media (max-width: 992px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+    background-color: #D11725;
+
+    gap: 20px;
+  }
+
+  .services-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .right-group-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .right-group-image img {
+    display: none
+  }
+}
+
+@media (max-width: 768px) {
+  .services-container {
+    gap: 15px;
+  }
+
+  .services-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right-group-image img {
+    display: none
+  }
+.services-section::after {
+  display: none;
+}
 }

@@ -1,6 +1,6 @@
 .testimonials-section {
   position: relative;
-  background-image: url("../../assets/ClientBg.png") ; /* replace with your file */
+  background-image: url("../../assets/ClientBg.png") ; 
   background-size: cover;
   background-position: center;
   color: #fff;

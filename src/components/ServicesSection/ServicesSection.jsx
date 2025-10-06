@@ -10,9 +10,6 @@ import mvpImg from "../../assets/mvp.png";
 import grouplaptop from "../../assets/Group.png";
 
 
-// Background images
-import bgTop from "../../assets/Rectangle2.png";     // top curved red
-import bgBottom from "../../assets/Rectangle3.png"; // bottom transition
 
 export default function ServicesSection() {
     const services = [

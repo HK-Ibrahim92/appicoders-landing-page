@@ -42,10 +42,10 @@
 /* Special Award */
 .award-badge {
   position: relative;
-  width: 230px;              /* adjust to match your design size */
+  width: 230px;              
   height: 230px;
   border-radius: 50%;
-  background: #3b3b3b;       /* base dark circle (in case bg image has transparency) */
+  background: #3b3b3b;       
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -56,29 +56,26 @@
   box-shadow: 0 10px 28px rgba(0,0,0,.18);
 }
 
-/* fills the circle; your provided dark circular/shield bg */
 .badge-bg {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;       /* your bg is circular; keep proportions */
-  opacity: .25;              /* subtle like the screenshot */
+  object-fit: contain;      
+  opacity: .25;              
   z-index: 0;
 }
 
-/* gold crest/logo at the top */
 .badge-logo {
   position: relative;
   z-index: 1;
-  width: 56px;               /* tweak if your logo size differs */
+  width: 56px;              
   height: auto;
   margin-top: 22px;
   margin-bottom: 10px;
   object-fit: contain;
 }
 
-/* bold white title (two lines) */
 .badge-title {
   position: relative;
   z-index: 1;
@@ -90,7 +87,6 @@
   text-shadow: 0 1px 1px rgba(0,0,0,.25);
 }
 
-/* small paragraph below */
 .badge-desc {
   position: relative;
   z-index: 1;
@@ -100,7 +96,6 @@
   color: #e9e9e9;
 }
 
-/* optional: make it slightly smaller on phones */
 @media (max-width: 560px) {
   .award-badge { width: 200px; height: 200px; }
   .badge-logo { width: 50px; margin-top: 18px; }

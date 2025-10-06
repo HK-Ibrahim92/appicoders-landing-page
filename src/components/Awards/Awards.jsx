@@ -1,7 +1,6 @@
 
 import "./Awards.css";
 
-// Use your actual image paths
 import award1 from "../../assets/award1.png";
 import award2 from "../../assets/award2.png";
 import award2top from "../../assets/award2top.png";

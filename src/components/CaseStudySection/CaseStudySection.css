@@ -107,16 +107,7 @@ margin-bottom: -350px;
             line-height: 1.2;
         }
 
-        @media (max-width: 480px) {
-            .store-buttons {
-                flex-direction: column;
-                align-items: stretch;
-            }
-
-            .store-btn {
-                justify-content: center;
-            }
-        }
+      
 
 .view-btn {
   background: #c60000;
@@ -186,4 +177,181 @@ margin-bottom: -350px;
 .arrow:hover {
   background: #c60000;
   color: #fff;
+}
+
+/* Enhanced Responsive Styles for CaseStudySection */
+
+@media (max-width: 1200px) {
+  .case-study-container {
+    /* flex-direction: column; */
+    gap: 30px;
+  }
+
+  .case-left {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .case-left h2 {
+    font-size: 28px;
+  }
+
+  .case-left p {
+    font-size: 14px;
+  }
+
+  .mockup img {
+    width: 350px;
+  }
+
+  .nav-buttons {
+    right: -40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .case-study-container {
+    padding: 20px;
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 20px;
+  }
+
+  .case-left {
+    max-width: 550px;
+    text-align: center;
+  }
+
+  .case-left h2 {
+    font-size: 24px;
+  }
+
+  .case-left p {
+    font-size: 13px;
+  }
+
+  .mockup img {
+    width: 300px;
+  }
+
+  .nav-buttons {
+    right: -30px;
+  }
+  .case-study {
+    transform: translateY(-350px);
+    margin-bottom: -350px;
+  min-height: 170vh;
+
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .case-study {
+    min-height: 120vh;
+    padding: 20px;
+    transform: translateY(-300px);
+    margin-bottom: -150px;
+
+  }
+
+  .case-study-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+  }
+
+  .case-left {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .case-left h2 {
+    font-size: 20px;
+  }
+
+  .case-left p {
+    font-size: 12px;
+  }
+  .case-right {
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+
+  .mockup img {
+    width: 250px;
+  }
+
+  .nav-buttons {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .case-study {
+    padding: 10px;
+    min-height: 120vh;
+
+    transform: translateY(-300px);
+    margin-bottom: -100px;
+  }
+ 
+  .case-left h2 {
+    font-size: 18px;
+  }
+  .case-right {
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+  }
+  .case-left p {
+    font-size: 11px;
+  }
+
+  .mockup img {
+    width: 200px;
+  }
+.view-btn{
+    width: 280px;
+    padding: 15px 25px;
+    font-size: 14px;
+  }
+}
+.case-left .tags {
+  gap: 5px;
+}
+
+.case-left .tags span {
+  padding: 15px 10px;
+}
+.store-buttons {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.store-btn {
+  justify-content: center;
+}
+
+
+  .nav-buttons {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .arrow {
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+  }
 }

@@ -2,8 +2,6 @@ import "./HeroSection.css";
 import heroImg from "../../assets/Mobile-Mockup.png"; 
 import getQouteBtn from "../../assets/getQoute-btn.png"; 
 
-import bgImg from "../../assets/Rectangle.png";
-import bgImg1 from "../../assets/Rectangle1.png";
 
 
 

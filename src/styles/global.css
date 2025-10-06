@@ -1,4 +1,4 @@
-/* Reset/Normalize */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
   }
   
   :root {
-    --primary: #1D4ED8; /* update with figma color */
+    --primary: #1D4ED8; 
     --secondary: #9333EA;
     --text-color: #333;
     --font-main: 'Inter', sans-serif;
