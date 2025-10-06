@@ -1,6 +1,10 @@
 # 🚀 Appicoders Landing Page
 
-A modern  landing page built with **React + Vite**, designed for the **Appicoders Frontend Test**.
+A modern responsive landing page built with **React + Vite**, designed for the **Appicoders Frontend Test**.
+
+---
+## 🌐 Live Demo  
+👉 [**Visit the Live Site**](https://appicoders-page-ibrahim.netlify.app/)
 
 ---
 
