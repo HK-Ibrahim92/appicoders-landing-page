@@ -6,7 +6,7 @@ import "./WhyChooseUs.css";
 
 const WhyChooseUs = () => {
   return (
-    <section className="why-choose-section">
+    <section className="why-choose-section" id="whychoseus">
       <h2 className="why-title">Why Choose Us?</h2>
       <p className="why-subtitle">
         With our unique approach and cost-effective solutions, your business will prosper because

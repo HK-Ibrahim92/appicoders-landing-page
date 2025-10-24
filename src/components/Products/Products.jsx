@@ -30,7 +30,7 @@ const Products = () => {
   ];
 
   return (
-    <section className="products-section">
+    <section className="products-section" id="products">
       <h2 className="products-title">Products</h2>
 
       <div className="product-categories">

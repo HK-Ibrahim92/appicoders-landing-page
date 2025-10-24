@@ -17,4 +17,7 @@
     color: var(--text-color);
     background: #fff;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   

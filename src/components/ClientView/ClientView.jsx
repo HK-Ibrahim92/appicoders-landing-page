@@ -4,7 +4,7 @@ import clientImg from "../../assets/Client.png";
 
 const ClientView = () => {
   return (
-    <section className="testimonials-section">
+    <section className="testimonials-section" id="testimonial">
       <div className="overlay">
           <div className="quote-icon">❝</div>
 

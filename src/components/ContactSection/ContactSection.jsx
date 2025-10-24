@@ -6,7 +6,7 @@ import btn_bg from "../../assets/btn-bg.png";
 
 const ContactSection = () => {
   return (
-    <section className="contact-section">
+    <section className="contact-section" id="contact">
       {/* LEFT SIDE */}
       <div className="contact-left">
         <div className="contact-content">

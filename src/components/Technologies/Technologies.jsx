@@ -5,7 +5,7 @@ import cloudImg from "../../assets/Technologies.png";
 
 const Technologies = () => {
   return (
-    <section className="technologies-section">
+    <section className="technologies-section" id="technologies">
       <h2 className="tech-title">Technologies</h2>
 
       <div className="tech-row">
