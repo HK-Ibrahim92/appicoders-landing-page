@@ -148,6 +148,9 @@
 }
 
 @media (max-width: 900px) {
+  .left-text{
+    margin-top: 40%;
+  }
   .testimonials-content {
     flex-direction: column;
     padding: 40px;

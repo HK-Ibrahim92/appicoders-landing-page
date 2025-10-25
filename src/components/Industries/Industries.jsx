@@ -44,7 +44,7 @@ const industries = [
 
 const Industries = () => {
   return (
-    <section className="industries-section">
+    <section className="industries-section" id="portfolio">
       <h2 className="industries-title">Industries</h2>
 
       <div className="industries-grid">
